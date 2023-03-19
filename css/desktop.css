@@ -1,0 +1,73 @@
+:root{
+  --color-background-button:#2A7AE4;
+}
+  body{
+  max-width: 1400px;
+  margin: auto;
+  
+}
+
+
+.menu__list{
+ display: contents;
+ display: flex;
+ gap: 3.2rem;
+ font-size: 1.6rem;
+ font-weight: 500;
+
+}
+
+
+.menu__list__item__contato{
+  display: none;
+}
+
+.title__profile{
+  width: 600px;
+
+  
+}
+
+.skills__line,
+.hobbies__line{
+    display: flex;
+    
+  }
+
+.experiencie__box{
+  display: grid;
+  grid-template-columns:75% 20%;
+  align-items: center;
+  gap: 1.6rem;
+
+  
+}
+
+
+.experiencia__boton--repo,
+.experience__boton--demo,
+.formcontato__boton{
+  transition: 300ms all;
+  
+  
+
+}
+
+
+
+
+.experiencia__boton--repo:hover{
+  color: #FFFF;
+  background-color: var(--color-background-button);
+}
+
+.experience__boton--demo:hover,
+.formcontato__boton:hover{
+  color: var(--color-background-button);
+  background-color: #FFFF;
+}
+
+
+
+
+

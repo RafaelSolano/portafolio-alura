@@ -1,0 +1,497 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    
+    --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+
+   --color-background-secondary: #EAF2FD;
+   --color-background-button:#2A7AE4;
+   --color-text-primary: #464646;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0; 
+    line-height: 1;
+    width: 100%;
+    color: var(--color-text-primary);
+}
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu__header{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+
+}
+
+.menu__list{
+    display: none;
+}
+
+
+/*Sección Title*/
+
+section.title{
+
+}
+.title__container-img{
+    display: flex;
+    justify-content: center;
+    
+}
+.title__network__item{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+.title__profile{
+    border-radius: 50%;
+    
+}
+
+.menu__title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    
+}
+
+.menu__list__item__contato{
+    font-size: 1.4rem;
+    
+}
+
+.title__profile{
+    padding: 0 1.6rem;
+    
+    width: 10rem;
+}
+
+.title__container{
+    margin: 1.6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 0 1.6rem;
+
+}
+
+.title__bio{
+    font-size: 2.2rem;
+    font-weight: 700;
+    
+}
+
+.title__subsection{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.title__network{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Sección About*/
+
+section.about{
+    padding: 1.6rem;
+    background-color: var(--color-background-secondary);
+    
+
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+}
+.about__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+
+}
+
+.about__paragraph{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.about__firma{
+    width: 14rem;
+}
+
+/*Sección skills*/
+
+section.skills{
+    padding: 1.6rem;
+
+}
+
+.skills__title,
+.hobbies__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.skills__line,
+.hobbies__line{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    gap: 1.6rem ;
+    margin-top: 3.2rem;
+    
+
+}
+.skills__box,
+.hobbies__box{
+    
+    width: 100%;
+    height: 12rem;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    
+
+
+}
+
+.skills__img,
+.hobbies__img{ 
+    width: 3.4rem;
+    margin: 3.8rem 0 0.8rem  1.6rem ;
+
+}
+.skills__name,
+.hobbies__name{
+    margin: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    padding: 1.6rem;
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background-secondary);
+
+
+}
+
+.academic__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.academic__courses{
+    width: 100%;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1.6rem;
+}
+.academic__courses__box{
+    width: 30rem;
+    
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    
+    
+
+}
+
+.academic__courses__item__img{
+    
+    background:#FFFF;
+    display: flex;
+    justify-content: center;
+    padding: 3.5rem;
+}
+.academic__courses__item__img img{
+    width: 10rem;
+}
+
+.academic__courses__item__title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.academic__courses__item__subtitle{
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+/* experiencia*/
+
+section.experience{
+
+    
+    margin-top: 3.2rem;
+    padding: 0 3.2rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.experience__container{
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+
+    margin-top: 1.6rem;
+
+}
+.experience__section__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.experiencie__box{
+
+   
+    
+}
+.experience__img{
+    width: 100%;
+
+}
+
+.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.6rem;
+}
+.experience__title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.experience__text{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.experience__description{
+    width: 100%;
+    display: flex;
+    gap: 1.6rem;
+    
+}
+.experiencia__boton--repo,
+.experience__boton--demo{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid var(--color-background-button);
+    border-radius: 4px;
+}
+.experiencia__boton--repo{
+    color: var(--color-background-button);
+    
+
+
+}
+.experience__boton--demo{
+    background-color: var(--color-background-button);
+    color: #FFFF;
+
+}
+/*Contacto*/
+
+section.formcontato{
+    margin-top: 3.2rem;
+    padding: 3.2rem;
+    background-color: var(--color-background-secondary);
+
+
+
+}
+
+.formcontato__contacto{
+
+}
+.formcontato__title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    
+}
+.formcontato__subtext{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height:  18.78px;
+}
+
+.formcontato__img{
+    display: none;
+
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    margin-top: 3.2rem;
+}
+.form__input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding:0.8rem 1.2rem ;
+    border-radius: 0.4rem;
+
+    background-color: #FFFF;
+    
+
+}
+
+.formcontato__input,
+.formcontato__textarea{
+    border: none;
+    outline: none;
+    
+        
+}
+
+.formcontato__input:focus{
+    border-bottom: 1px solid var(--color-background-button);
+
+}
+
+
+
+.formcontato__boton{
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid var(--color-background-button);
+    border-radius: 4px;
+    background-color: var(--color-background-button);
+    color: #FFFF;
+
+
+}
+/*footeer*/
+
+section.footer{
+    padding:3.2rem 6.5rem ;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

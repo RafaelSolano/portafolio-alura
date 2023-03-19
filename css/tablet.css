@@ -1,0 +1,33 @@
+/* Menú */
+
+/*title*/
+.title__div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+/*Skills*/
+
+.skills__line,
+.hobbies__line{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-around;
+    gap: 1.6rem ;
+    margin-top: 3.2rem;
+    
+}
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+.academic__courses{
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Experiencia Profesional*/
+
