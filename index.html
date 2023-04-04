@@ -297,27 +297,52 @@
                     antes posible. </h3>
                 <form class="formcontato__form" name="form">
                     
-                    <div class="form__input-container">
+                    <div class="form__input-container  ">
                         <label for="nombre">Nombre</label>
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="André Lisboa">
+                        <input class="formcontato__input"
+                            type="text"
+                            name="nombre"
+                            placeholder="André Lisboa"
+                            data-tipo="name"
+                            required>
+                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
 
-                    <div class="form__input-container">
+                    <div class="form__input-container  ">
                         <label for="email">E-mail</label>
-                        <input class="formcontato__input" type="email" name="email" placeholder="andre.lisboa@alur">
+                        <input class="formcontato__input"
+                            type="email" 
+                            name="email" 
+                            placeholder="andre.lisboa@alur" 
+                            data-tipo="email"
+                            required>
 
+                        <span class="input-message-error">Este campo no es valido</span>
 
                     </div>
-                    <div class="form__input-container">
+                    <div class="form__input-container  ">
                         <label for="asunto">Asunto</label>
-                        <input class="formcontato__input" type="text" name="asunto"">
+                        <input class="formcontato__input" 
+                            type="text" 
+                            name="asunto" 
+                            data-tipo="asunto"
+                            required>
 
-                        
+                        <span class="input-message-error">Este campo no es valido</span>
+
                     </div>
-                    <div class="form__input-container">
+                    <div class="form__input-container  ">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                        placeholder=""></textarea>
+                        <textarea class="formcontato__textarea" 
+                            rows="5" 
+                            cols="40" 
+                            id="mensagem" 
+                            name="mensaje"
+                            placeholder="mesage"
+
+                            data-tipo="mesaje"
+                            required></textarea>
+                        <span class="input-message-error">Este campo no es valido</span>
 
                     </div>
                     

@@ -367,6 +367,9 @@ section.experience{
 }
 /*Contacto*/
 
+
+  
+
 section.formcontato{
     margin-top: 3.2rem;
     padding: 3.2rem;
@@ -441,6 +444,28 @@ section.formcontato{
 
 
 }
+
+/**Validaciones formulario */
+
+.form__input-container
+
+.input-message-error {
+    display: none;
+  }
+
+  .input-message-error__show {
+    border: 1px solid rgb(228, 97, 97);
+  }
+  
+  
+  .input-container--invalid .input-message-error {
+    color: rgb(236, 77, 77);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+
 /*footeer*/
 
 section.footer{
