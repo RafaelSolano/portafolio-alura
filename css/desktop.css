@@ -23,7 +23,8 @@
 }
 
 .title__profile{
-  width: 600px;
+  width: 800px;
+  object-fit: cover;
 
   
 }

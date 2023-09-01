@@ -76,11 +76,13 @@ section.menu{
 /*Sección Title*/
 
 section.title{
+    background: #fff;
 
 }
 .title__container-img{
     display: flex;
     justify-content: center;
+   
     
 }
 .title__network__item{
@@ -88,7 +90,7 @@ section.title{
     font-weight: 500;
   }
 .title__profile{
-    border-radius: 50%;
+    border-radius: 0%
     
 }
 
