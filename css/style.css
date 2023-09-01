@@ -206,10 +206,16 @@ section.skills{
 
 }
 
-.skills__img,
-.hobbies__img{ 
+.skills__img ,
+.hobbies__img { 
     width: 3.4rem;
     margin: 3.8rem 0 0.8rem  1.6rem ;
+    
+
+}
+
+.skills__img img{
+    width: 3.8rem;
 
 }
 .skills__name,
